@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas image slider</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+   <!--
+Insipred by Alexander Laguta/Alexey Smolkin:
+https://www.behance.net/gallery/19539847/Helen-Miller
+
+Pictures by Jakub Polomski: https://www.behance.net/gallery/20651777/Queens-of-Andes
+    -->
+
+    <canvas id="canvas0" width="800" height="480"></canvas>
+    <canvas id="canvas1" width="800" height="480"></canvas>
+    <canvas id="canvas2" width="800" height="480"></canvas>
+    <canvas id="canvas3" width="800" height="480"></canvas>
+
+    <nav class="link-list">
+        <ul>
+            <li><a href="" data-order="0" data-imagesrc="img/1.jpg"></a></li>
+            <li><a href="" data-order="1" data-imagesrc="img/2.jpg"></a></li>
+            <li><a href="" data-order="2" data-imagesrc="img/3.jpg"></a></li>
+            <li><a href="" data-order="3" data-imagesrc="img/4.jpg"></a></li>
+            <li><a href="" data-order="4" data-imagesrc="img/5.jpg"></a></li>
+        </ul>
+    </nav>
+
+    <nav class="btns">
+        <button class="show-prev"><span>PREV</span></button>
+        <button class="show-next"><span>NEXT</span></button>
+    </nav>
+
+    <p class="loading-txt">Loading images...</p>
+
+    <footer>
+        Credits: 
+        <a href="https://www.behance.net/gallery/19539847/Helen-Miller">Inspiration</a>
+        |  
+        <a href="https://www.behance.net/gallery/20651777/Queens-of-Andes">images</a>
+    </footer>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
